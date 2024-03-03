@@ -4,7 +4,7 @@
     "args": { 
         "sequence": [
             "editor.action.insertLineAfter", 
-            "cursorUp", 
+            "cursorUp",
         ]
     },
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
@@ -14,4 +14,4 @@
     "key": "space c",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-},
+}

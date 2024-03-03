@@ -31,7 +31,6 @@
     "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
 },
 //
-
 {
     "key": "escape",
     "command": "workbench.action.focusFirstEditorGroup",
@@ -88,7 +87,7 @@
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
 },
 {
-    "key": "space a",
+    "key": "space e",
     "command": "workbench.files.action.showActiveFileInExplorer",
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
 },
@@ -97,3 +96,26 @@
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
 },
+{
+    "key": "space v e",
+    "command": "workbench.view.extensions",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+
+{
+    "key": "escape",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+        "sequence": [
+            "workbench.action.focusFirstEditorGroup",
+            "workbench.action.closeSidebar",
+        ]
+    },
+    "when": "viewContainer.workbench.view.extensions.enabled && !editorTextFocus"
+},
+
+  {
+    "key": "ctrl+shift+x",
+    "command": "workbench.view.extensions",
+    "when": "viewContainer.workbench.view.extensions.enabled"
+  },
