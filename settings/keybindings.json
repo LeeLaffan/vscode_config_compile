@@ -1,5 +1,20 @@
 [
 	{
+	    "key": "space b",
+	    "command": "bookmarks.toggle",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},
+	{
+	    "key": "space shift b",
+	    "command": "bookmarks.toggleLabeled",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},
+	{
+	    "key": "ctrl+b",
+	    "command": "bookmarks.listFromAllFiles",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},	
+	{
 	    "key": "ctrl+c",
 	    "command": "-extension.vim_ctrl+c",
 	    "when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
@@ -46,6 +61,16 @@
 	    "command": "explorer.newFolder",
 	    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
 	},
+	{
+	    "key": "space c",
+	    "command": "copyFilePath",
+	    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+	    "key": "space h",
+	    "command": "workbench.explorer.openEditorsView.removeView",
+	    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
 	//
 	{
 	    "key": "escape",
@@ -80,37 +105,22 @@
 	            "workbench.action.focusFirstEditorGroup",
 	        ]
 	    },
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "ctrl+shift+b",
 	    "command": "workbench.action.toggleSidebarPosition",
 	    // "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
 	},
-	
-	{
-	    "key": "ctrl+b",
-	    "command": "extension.multiCommand.execute",
-	    "args": { 
-	        "sequence": [
-	            // "workbench.action.toggleSidebarPosition", // Explorer
-	            "workbench.action.toggleActivityBarVisibility", // Bar with icons?
-	            "workbench.action.toggleAuxiliaryBar", // Bar with icons?
-	            // "workbench.action.closeAuxiliaryBar", // Terminal
-	            // "workbench.action.focusFirstEditorGroup"
-	        ]
-	    },
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-	},
 	{
 	    "key": "space e",
 	    "command": "workbench.files.action.showActiveFileInExplorer",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "ctrl+e",
 	    "command": "workbench.action.toggleSidebarVisibility",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "escape",
@@ -130,9 +140,9 @@
 	    "when": "viewContainer.workbench.view.extensions.enabled"
 	  },	
 	{
-	    "key": "space r",
-	    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "key": "space enter",
+	    "command": "workbench.action.previousEditor",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "ctrl+enter",
@@ -146,17 +156,17 @@
 	{
 	    "key": "left",
 	    "command": "workbench.action.navigateLeft",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "right",
 	    "command": "workbench.action.navigateRight",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},	
 	// {
 	//     "key": "space f f",
 	//     "command": "workbench.action.findInFiles",
-	//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	// },
 	{
 	    "key": "escape",
@@ -174,11 +184,11 @@
 	    "args": {
 	        "sequence": [
 	            "goToNextReference",
-	            // "cursorDown", 
+	             // "cursorDown", 
 	            // "editor.action.openLink"
 	        ]
 	    },
-	    "when": "inSearchEditor && vim.active && vim.mode != 'Insert'"
+	    "when": "inSearchEditor && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "enter",
@@ -229,12 +239,12 @@
 	            "increaseSearchEditorContextLines",
 	        ]
 	    },
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "ctrl+f",
 	    "command": "workbench.action.showAllSymbols",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "ctrl+f",
@@ -263,62 +273,141 @@
 	    "when": "inSearchEditor"
 	},
 	{
-	    "key": "ctrl+i",
+	    "key": "g i",
 	    "command": "search.action.focusFilesToInclude",
-	    "when": "inSearchEditor"
+	    "when": "inSearchEditor && !searchInputBoxFocus"
 	},
 	{
-	    "key": "ctrl+o",
+	    "key": "g e",
 	    "command": "search.action.focusFilesToExclude",
-	    "when": "inSearchEditor"
+	    "when": "inSearchEditor && !searchInputBoxFocus"
 	},
 	{
-	    "key": "g",
+	    "key": "g d",
 	    "command": "editor.action.revealDefinition",
 	    "when": "inSearchEditor && !searchInputBoxFocus"
+	},
+	{
+	    "key": "g h",
+	    "command": "extension.multiCommand.execute",
+	    "args": {
+	        "sequence": [
+	            "editor.action.revealDefinitionAside",
+	            "workbench.action.moveEditorToPreviousGroup", 
+	            "workbench.action.moveEditorToPreviousGroup", 
+	        ]
+	    },
+	    "when": "inSearchEditor && !searchInputBoxFocus"
 	},	
+	// {
+	//     "key": "g u",
+	//     "command": "editor.action.goToReferences",
+	//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	// },
+	// {
+	//     "key": "g c",
+	//     "command": "references-view.showCallHierarchy",
+	//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	// },
+	// {
+	//     "key": "g i",
+	//     "command": "editor.action.goToImplementation",
+	//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	// },
+	// {
+	//     "key": "g s",
+	//     "command": "breadcrumbs.focusAndSelect",
+	//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress' 
+	//              && breadcrumbsPossible && breadcrumbsVisible"
+	// },
 	{
-	    "key": "g u",
-	    "command": "editor.action.goToReferences",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "key": "win+v",
+	    "command": "extension.vim_cmd+v",
+	    "when": "editorTextFocus && vim.active && vim.use<D-v> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || editorTextFocus && vim.active && vim.use<D-v> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
 	},
 	{
-	    "key": "g c",
-	    "command": "references-view.showCallHierarchy",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-	},
-	{
-	    "key": "g i",
-	    "command": "editor.action.goToImplementation",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-	},
-	{
-	    "key": "g s",
-	    "command": "breadcrumbs.focusAndSelect",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && breadcrumbsPossible && breadcrumbsVisible"
-	}	
+	    "key": "escape",
+	    "command": "closeReferenceSearch",
+	    "when": "referenceSearchVisible && !editorTextFocus 
+	},	
+	
 	{
 	    "key": "space v k",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
+	    "command": "workbench.action.openGlobalKeybindings",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},
+	{
+	    "key": "space v k",
+	    "command": "extension.multiCommand.execute",
+	    "args": { 
+	        "sequence": [
+	            "workbench.action.openGlobalKeybindings", // Bar with icons?
+	            "workbench.action.moveEditorToNextGroup",
+	        ]
+	    },
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},
+	{
+	    "key": "escape",
+	    "command": "workbench.action.closeActiveEditor",
+	    "when": "inKeybindings && keybindingFocus && inputFocus"
+	},
+	{
+	    "key": "escape",
+	    "command": "keybindings.editor.searchKeybindings",
+	    "when": "inKeybindings && keybindingFocus && !inputFocus"
+	},
+	{
+	    "key": "enter",
+	    "command": "keybindings.editor.focusKeybindings",
+	    "when": "inKeybindings && !keybindingFocus && inputFocus"
+	},
+	{
+	    "key": "ctrl+f",
+	    "command": "keybindings.editor.copyCommandKeybindingEntry",
+	    "when": "inKeybindings && !keybindingFocus && inputFocus"
+	},
+	{
+	    "key": "ctrl+c",
+	    "command": "keybindings.editor.copyCommandKeybindingEntry",
+	    "when": "inKeybindings && !keybindingFocus && inputFocus"
+	},
+	{
+	    "key": "left",
+	    "command": "workbench.action.focusLeftGroup",
+	    "when": "inKeybindings && && !inputFocus"
+	},
+	
+	{
+	    "key": "space v c",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
 	    "command": "workbench.action.terminal.sendSequence",
 	    "args": {
 	        "text": "L:\\Code\\Python\\vscode_config_compile\\scripts\\compile_and_write.ps1\u000D"
 	    }
 	},
 	{
-	    "key": "space v e",
+	    "key": "space v e e",
 	    "command": "workbench.view.extensions",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
-	    "key": "space v t",
+	    "key": "space v e t",
 	    "command": "workbench.action.selectTheme",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "space",
 	    "command": "whichkey.show",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},
+	{
+	    "key": "space v t",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+	    "command": "workbench.action.terminal.sendSequence",
+	    "args": {
+	        "text": "code L:\\Code\\Python\\vscode_config_compile\\input\\todo.md\u000D"
+	    }
 	},	
 	{
 	    "key": "ctrl+k",
@@ -341,7 +430,7 @@
 	    "args": {
 	    "text": "ls\u000D"
 	    },
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "ctrl+t",
@@ -349,13 +438,17 @@
 	    // "args": {
 	    // "text": "ls\u037777777777D"
 	    // },
-	    "when": "(editorTextFocus && vim.active && vim.mode != 'Insert') || terminalFocus"
+	    "when": "(editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress') || terminalFocus"
 	},
 	{
 	    "key": "space t t",
 	    "command": "workbench.action.terminal.runRecentCommand",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
 	    "after": "enter"
+	},
+	{
+	    "key": "ctrl+w",
+	    "command": "workbench.action.closeAllEditors"
 	},	
 	{
 	    "key": "space o",
@@ -366,33 +459,74 @@
 	            "cursorUp",
 	        ]
 	    },
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	
 	{
 	    "key": "space c",
 	    "command": "editor.action.commentLine",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	}	
 	
 	{
 	    "key": "space w t",
 	    "command": "workbench.action.closeActiveEditor",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},
+	{
+	    "key": "space w v",
+	    "command": "workbench.action.splitEditor",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "space w c",
 	    "command": "workbench.action.closeEditorsInGroup",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},
 	{
 	    "key": "ctrl+w",
 	    "command": "workbench.action.openRecent"
+	},
+	{
+	    "key": "space w c",
+	    "command": "workbench.action.closeEditorsInGroup",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},
+	{
+	    "key": "space w o",
+	    "command": "workbench.action.closeEditorsInOtherGroups",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},
+	{
+	    "key": "space w h",
+	    "command": "workbench.action.moveEditorToPreviousGroup",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},
+	{
+	    "key": "space w l",
+	    "command": "workbench.action.moveEditorToNextGroup",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+	},
+	{
+	    "key": "space w n",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+	    "command": "workbench.action.terminal.sendSequence",
+	    "args": {
+	        "text": "code L:\\GDriveNetwork\\Obsidian\u000D"
+	    }
+	},
+	{
+	    "key": "space w s",
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+	    "command": "workbench.action.terminal.sendSequence",
+	    "args": {
+	        "text": "code L:\\Code\\Python\\vscode_config_compile\u000D"
+	    }
 	},	
 	{
 	    "key": "space w w",
 	    "command": "workbench.action.openRecent",
-	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+	    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
 	},	
 
 ]

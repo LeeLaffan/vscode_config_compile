@@ -1,0 +1,25 @@
+{
+    "key": "g u",
+    "command": "workbench.action.quickOpenPreviousEditor",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+// {
+//     "key": "g c",
+//     "command": "references-view.showCallHierarchy",
+//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+// },
+// {
+//     "key": "g i",
+//     "command": "editor.action.goToImplementation",
+//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+// },
+// {
+//     "key": "g s",
+//     "command": "breadcrumbs.focusAndSelect",
+//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && breadcrumbsPossible && breadcrumbsVisible"
+// },
+// {
+//     "key": "win+v",
+//     "command": "extension.vim_cmd+v",
+//     "when": "editorTextFocus && vim.active && vim.use<D-v> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || editorTextFocus && vim.active && vim.use<D-v> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+// },

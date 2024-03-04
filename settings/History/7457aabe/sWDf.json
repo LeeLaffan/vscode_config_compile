@@ -1,0 +1,45 @@
+{
+    "key": "space w t",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "space w v",
+    "command": "workbench.action.splitEditor",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "space w c",
+    "command": "workbench.action.closeEditorsInGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "ctrl+w",
+    "command": "workbench.action.openRecent"
+},
+{
+    "key": "space w c",
+    "command": "workbench.action.closeEditorsInGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "space w o",
+    "command": "workbench.action.closeEditorsInOtherGroups",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "space w n",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "code L:\\GDriveNetwork\\Obsidian\u000D"
+    }
+},
+{
+    "key": "space w s",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "code L:\\Code\\Python\\vscode_config_compile\u000D"
+    }
+},

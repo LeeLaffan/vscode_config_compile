@@ -1,0 +1,31 @@
+// {
+//     "key": "g u",
+//     "command": "editor.action.goToReferences",
+//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+// },
+// {
+//     "key": "g c",
+//     "command": "references-view.showCallHierarchy",
+//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+// },
+// {
+//     "key": "g i",
+//     "command": "editor.action.goToImplementation",
+//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+// },
+ // {
+//     "key": "g s",
+//     "command": "breadcrumbs.focusAndSelect",
+//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress' 
+//              && breadcrumbsPossible && breadcrumbsVisible"
+// },
+{
+    "key": "win+v",
+    "command": "extension.vim_cmd+v",
+    "when": "editorTextFocus && vim.active && vim.use<D-v> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || editorTextFocus && vim.active && vim.use<D-v> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+},
+// {
+//     "key": "escape",
+//     "command": "closeReferenceSearch",
+//     "when": "referenceSearchVisible && !editorTextFocus' 
+// },

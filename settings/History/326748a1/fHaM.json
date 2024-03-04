@@ -1,0 +1,5 @@
+{
+    "key": "space b",
+    "command": "workbench.view.extensions",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},

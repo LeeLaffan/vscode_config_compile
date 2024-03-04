@@ -1,0 +1,124 @@
+// {
+//     "key": "space f f",
+//     "command": "workbench.action.findInFiles",
+//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+// },
+{
+    "key": "escape",
+    "command": "workbench.action.closeEditorsInGroup",
+    "when": "inSearchEditor && searchInputBoxFocus"
+},
+{
+    "key": "escape",
+    "command": "search.action.focusQueryEditorWidget",
+    "when": "inSearchEditor && !searchInputBoxFocus"
+},
+{
+    "key": "ctrl+y",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "goToNextReference",
+            // "cursorDown", 
+            // "editor.action.openLink"
+        ]
+    },
+    "when": "inSearchEditor && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "enter",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "search.action.focusNextSearchResult",
+            "extension.vim_escape"
+            // "workbench.action.findInFiles",
+            // "workbench.action.moveEditorToNextGroup", 
+        ]
+    },
+    "when": "inSearchEditor"
+},
+{
+    "key": "ctrl+enter",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.action.revealDefinition",
+            "workbench.action.moveEditorToPreviousGroup",
+            "workbench.action.focusNextGroup",
+            "workbench.action.closeEditorsAndGroup"
+            // "workbench.action.moveEditorToNextGroup", 
+        ]
+    },
+    "when": "inSearchEditor && !searchInputBoxFocus"
+},
+{
+    "key": "shift+enter",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.action.peekDefinition",
+        ]
+    },
+    "when": "inSearchEditor && !searchInputBoxFocus"
+},
+{
+    "key": "space f f",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "workbench.action.findInFiles",
+            "workbench.action.moveEditorToNextGroup",
+            "increaseSearchEditorContextLines",
+            "increaseSearchEditorContextLines",
+            "increaseSearchEditorContextLines",
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "ctrl+f",
+    "command": "workbench.action.showAllSymbols",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "ctrl+f",
+    "command": "-actions.find",
+    "when": "editorFocus || editorIsOpen"
+},
+
+{
+    "key": "ctrl+e",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "increaseSearchEditorContextLines",
+        ]
+    },
+    "when": "inSearchEditor"
+},
+{
+    "key": "ctrl+r",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "decreaseSearchEditorContextLines",
+        ]
+    },
+    "when": "inSearchEditor"
+},
+{
+    "key": "g i",
+    "command": "search.action.focusFilesToInclude",
+    "when": "inSearchEditor && !searchInputBoxFocus"
+},
+{
+    "key": "g o",
+    "command": "search.action.focusFilesToExclude",
+    "when": "inSearchEditor && !searchInputBoxFocus"
+},
+{
+    "key": "g d",
+    "command": "editor.action.revealDefinition",
+    "when": "inSearchEditor && !searchInputBoxFocus"
+},

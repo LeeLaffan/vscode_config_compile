@@ -1,0 +1,15 @@
+{
+    "key": "space b",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "space shift b",
+    "command": "bookmarks.toggleLabeled",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "ctrl+b",
+    "command": "bookmarks.listFromAllFiles",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},

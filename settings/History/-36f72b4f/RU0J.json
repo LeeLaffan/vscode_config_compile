@@ -1,0 +1,41 @@
+
+{
+    "key": "space v k",
+    "command": "workbench.action.openGlobalKeybindings",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "space v k",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+        "sequence": [
+            "workbench.action.openGlobalKeybindings", // Bar with icons?
+            "workbench.action.moveEditorToNextGroup",
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'"
+},
+{
+    "key": "space g i",
+    "command": "keybindings.editor.searchKeybindings",
+    "when": "inKeybindings && keybindingFocus && !inputFocus"
+},
+{
+    "key": "enter",
+    "command": "keybindings.editor.focusKeybindings",
+    "when": "inKeybindings && !keybindingFocus && inputFocus"
+},
+{
+    "key": "ctrl+c",
+    "command": "keybindings.editor.copyCommandKeybindingEntry",
+    "when": "inKeybindings && !keybindingFocus && inputFocus"
+},
+{
+    "key": "ctrl+f",
+    "command": "keybindings.editor.copyKeybindingEntry",
+    "when": "inKeybindings && !keybindingFocus && inputFocus"
+}{
+    "key": "alt+k",
+    "command": "keybindings.editor.recordSearchKeys",
+    "when": "inKeybindings && inKeybindingsSearch"
+  },

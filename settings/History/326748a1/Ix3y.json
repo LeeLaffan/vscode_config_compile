@@ -1,0 +1,5 @@
+{
+    "key": "space b",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},

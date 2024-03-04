@@ -1,22 +1,18 @@
 {
     "telemetry.machineId": "fe97e19a05925223cb86870bb2a997ca303847db3c7a1aadd2f31146a397329d",
     "backupWorkspaces": {
-        "workspaces": [
+        "workspaces": [],
+        "folders": [
             {
-                "id": "8738e4ca9828b6c3784d5f22ea24ea46",
-                "configURIPath": "file:///l%3A/vscode/workspaces/vscode_config_compile.code-workspace"
+                "folderUri": "file:///l%3A/Code/Python/vscode_config_compile"
             }
         ],
-        "folders": [],
         "emptyWindows": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "workspaceIdentifier": {
-                "id": "8738e4ca9828b6c3784d5f22ea24ea46",
-                "configURIPath": "file:///l%3A/vscode/workspaces/vscode_config_compile.code-workspace"
-            },
-            "backupPath": "C:\\Users\\l\\AppData\\Roaming\\Code\\Backups\\8738e4ca9828b6c3784d5f22ea24ea46",
+            "folder": "file:///l%3A/Code/Python/vscode_config_compile",
+            "backupPath": "C:\\Users\\l\\AppData\\Roaming\\Code\\Backups\\c827b74f6994ab06685d6b351d7fd3d9",
             "uiState": {
                 "mode": 0,
                 "x": 768,
@@ -28,19 +24,19 @@
         "openedWindows": []
     },
     "theme": "vs-dark",
-    "themeBackground": "#1f1f1f",
+    "themeBackground": "#212121",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#cccccc",
-            "background": "#1f1f1f",
-            "editorBackground": "#1f1f1f",
-            "titleBarBackground": "#181818",
-            "activityBarBackground": "#181818",
-            "sideBarBackground": "#181818",
-            "statusBarBackground": "#181818",
-            "statusBarNoFolderBackground": "#1f1f1f"
+            "foreground": "#eeffff",
+            "background": "#212121",
+            "editorBackground": "#212121",
+            "titleBarBackground": "#1a1a1a",
+            "activityBarBackground": "#1a1a1a",
+            "sideBarBackground": "#1a1a1a",
+            "statusBarBackground": "#1a1a1a",
+            "statusBarNoFolderBackground": "#212121"
         },
         "layoutInfo": {
             "sideBarSide": "left",
@@ -52,7 +48,7 @@
             "windowBorder": false
         }
     },
-    "windowControlHeight": 30,
+    "windowControlHeight": 35,
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
@@ -65,14 +61,15 @@
             "file:///l%3A/Code/Python/Solar": "__default__profile__",
             "file:///l%3A/Code/vimrcManager": "__default__profile__",
             "file:///l%3A/Code/go/TextEditor": "__default__profile__",
-            "file:///l%3A/Code/Python/vscode_config_compile": "__default__profile__",
             "file:///l%3A/Code/c-sharp/AppSwitchOrOpen": "__default__profile__",
             "file:///c%3A/Users/l/AppData/Roaming/Code/User": "__default__profile__",
             "file:///l%3A/": "__default__profile__",
             "file:///l%3A/Code": "__default__profile__",
             "file:///l%3A/vscode/workspaces/User.code-workspace": "__default__profile__",
+            "file:///l%3A/vscode/workspaces/vscode_config_compile.code-workspace": "__default__profile__",
             "file:///l%3A/vscode/workspaces/test%202.code-workspace": "__default__profile__",
-            "file:///l%3A/vscode/workspaces/vscode_config_compile.code-workspace": "__default__profile__"
+            "file:///l%3A/GDriveNetwork/Obsidian": "__default__profile__",
+            "file:///l%3A/Code/Python/vscode_config_compile": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -116,22 +113,20 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "openRecentWorkspace",
+                                    "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///l%3A/vscode/workspaces/vscode_config_compile.code-workspace",
-                                        "path": "/l:/vscode/workspaces/vscode_config_compile.code-workspace",
+                                        "path": "/l:/Code/Python/vscode_config_compile",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "L:\\vscode\\workspaces\\vscode_config_compile (Workspace)"
+                                    "label": "L:\\Code\\Python\\vscode_config_compile"
                                 },
                                 {
                                     "id": "openRecentWorkspace",
@@ -143,6 +138,27 @@
                                     },
                                     "enabled": true,
                                     "label": "L:\\vscode\\workspaces\\test 2 (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/l:/GDriveNetwork/Obsidian",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "L:\\GDriveNetwork\\Obsidian"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///l%3A/vscode/workspaces/vscode_config_compile.code-workspace",
+                                        "path": "/l:/vscode/workspaces/vscode_config_compile.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "L:\\vscode\\workspaces\\vscode_config_compile (Workspace)"
                                 },
                                 {
                                     "id": "openRecentWorkspace",
@@ -199,16 +215,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/l:/Code/Python/vscode_config_compile",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "L:\\Code\\Python\\vscode_config_compile"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "path": "/l:/Code/go/TextEditor",
                                         "scheme": "file"
                                     },
@@ -216,17 +222,17 @@
                                     "label": "L:\\Code\\go\\TextEditor"
                                 },
                                 {
-                                    "id": "openRecentFolder",
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "path": "/l:/Code/vimrcManager",
+                                        "path": "/l:/Code/Python/vscode_config_compile/input/todo.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "L:\\Code\\vimrcManager"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
+                                    "label": "L:\\Code\\Python\\vscode_config_compile\\input\\todo.md"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -317,16 +323,6 @@
                                     },
                                     "enabled": true,
                                     "label": "C:\\Users\\l\\AppData\\Local\\nvim\\lua\\telescope_config.lua"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "path": "/c:/Users/l/AppData/Local/nvim-data/site/pack/packer/start/telescope.nvim/lua/telescope/config.lua",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "C:\\Users\\l\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim\\lua\\telescope\\config.lua"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -521,7 +517,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Workspace"
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -997,10 +993,6 @@
                         "label": "E&&xtensions"
                     },
                     {
-                        "id": "workbench.view.extension.test",
-                        "label": "T&&esting"
-                    },
-                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -1041,8 +1033,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1111,54 +1102,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1362,8 +1344,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1811,9 +1792,8 @@
                 "userSettingsLabel": "ctrl+5"
             },
             "workbench.action.focusLeftGroup": {
-                "label": "Ctrl+K Ctrl+LeftArrow",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+left"
+                "label": "Left",
+                "userSettingsLabel": "left"
             },
             "workbench.action.focusRightGroup": {
                 "label": "Ctrl+K Ctrl+RightArrow",
@@ -1843,18 +1823,17 @@
                 "userSettingsLabel": "ctrl+shift+o"
             },
             "editor.action.revealDefinition": {
-                "label": "G",
-                "userSettingsLabel": "g"
+                "label": "G D",
+                "isNative": false,
+                "userSettingsLabel": "g d"
             },
             "editor.action.goToImplementation": {
-                "label": "G I",
-                "isNative": false,
-                "userSettingsLabel": "g i"
+                "label": "Ctrl+F12",
+                "userSettingsLabel": "ctrl+f12"
             },
             "editor.action.goToReferences": {
-                "label": "G U",
-                "isNative": false,
-                "userSettingsLabel": "g u"
+                "label": "Shift+F12",
+                "userSettingsLabel": "shift+f12"
             },
             "workbench.action.gotoLine": {
                 "label": "Ctrl+G",
