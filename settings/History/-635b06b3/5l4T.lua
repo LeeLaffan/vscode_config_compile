@@ -1,0 +1,1 @@
+soldier_respawn_move_modifier = class({})

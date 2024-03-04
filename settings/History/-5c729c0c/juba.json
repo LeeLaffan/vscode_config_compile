@@ -1,0 +1,204 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+c",
+        "command": "-extension.vim_ctrl+c",
+        "when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-extension.vim_ctrl+x",
+        "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "-extension.vim_ctrl+z",
+        "when": "editorTextFocus && vim.active && vim.use<C-z> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-extension.vim_ctrl+y",
+        "when": "editorTextFocus && vim.active && vim.use<C-y> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "editor.action.scrollDownHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "down",
+        "command": "-editor.action.scrollDownHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "breadcrumbs.selectFocused",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },
+    {
+        "key": "down",
+        "command": "-breadcrumbs.selectFocused",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "down",
+        "command": "-inlineChat.nextFromHistory",
+        "when": "inlineChatFocused && inlineChatHasProvider && inlineChatInnerCursorEnd"
+    },
+    {
+        "key": "down",
+        "command": "-inlineChat.nextFromHistory",
+        "when": "inlineChatFocused && inlineChatHasProvider && inlineChatInnerCursorEnd"
+    },
+    {
+        "key": "enter",
+        "command": "keybindings.editor.addKeybinding",
+        "when": "inlineChatFocused && inlineChatHasProvider && inlineChatInnerCursorEnd"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "keybindings.editor.defineKeybinding",
+        "when": "inKeybindings && keybindingFocus && !whenFocus"
+    },
+
+    {
+        "key": "down",
+        "command": "-editor.action.selectNextStickyScrollLine",
+        "when": "stickyScrollFocused"
+    },
+
+
+    {
+        "key": "down",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inSearchEditor"
+    },
+    //{
+        //"key": "leader b",
+        //"command": "workbench.action.terminal.sendSequence",
+        //"args": {
+        //  "text": "ls\u000D"
+      //  }
+    //},
+    {
+        "key": "\\ v d",
+        "command": "workbench.action.openDefaultKeybindingsFile",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "\\ \\",
+        "command": "\\",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "space t t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        // "args": {
+        // "text": "ls\u000D"
+        // },
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+
+
+    {
+        "key": "ctrl+enter",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+    },
+
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+
+    {
+        "key": "space y",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+        "text": "ls\u000D"
+        },
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    //{
+    //    "key": "space a",
+    //    "command": "workbench.action.openDefaultKeybindingsFile",
+    //    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    //},
+    //activeEditor == 'workbench.editor.extension'
+    {
+        //"key": "space p",
+
+    },
+    {
+        "key": "ctrl+n",
+        "command": "github.copilot.nextPanelSolution",
+        "when": "github.copilot.activated && github.copilot.panelVisible"
+    },
+    {
+        "key": "alt+oem_6",
+        "command": "-github.copilot.nextPanelSolution",
+        "when": "github.copilot.activated && github.copilot.panelVisible"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "github.copilot.previousPanelSolution",
+        "when": "github.copilot.activated && github.copilot.panelVisible"
+    },
+    {
+        "key": "alt+oem_4",
+        "command": "-github.copilot.previousPanelSolution",
+        "when": "github.copilot.activated && github.copilot.panelVisible"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "editor.action.inlineSuggest.showNext",
+        "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+        "key": "alt+oem_6",
+        "command": "-editor.action.inlineSuggest.showNext",
+        "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "editor.action.inlineSuggest.showPrevious",
+        "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+        "key": "alt+oem_4",
+        "command": "-editor.action.inlineSuggest.showPrevious",
+        "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+
+    {
+        "key": "ctrl+down",
+        "command": "-scrollLineDown",
+        "when": "textInputFocus"
+    },
+
+]

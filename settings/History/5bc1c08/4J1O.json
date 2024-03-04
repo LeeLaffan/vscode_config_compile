@@ -1,0 +1,171 @@
+{
+    "typescript.suggest.completeFunctionCalls": true,
+    "vscode-neovim.neovimExecutablePaths.linux": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+    "vscode-neovim.ctrlKeysForNormalMode": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "o",
+        "r",
+        "t",
+        "u",
+        "w",
+        "x",
+        "y",
+        "z",
+        "/",
+        "]",
+        "right",
+        "left",
+        "up",
+        "down",
+        "backspace",
+        "delete"
+    ],
+    "go.gopath": "L:\\Languages\\Go",
+    "workbench.colorTheme": "Vim Deep Dark",
+
+    "keyboard.customKeybindings": [
+        "/custom/space.json"
+    ],
+
+
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false
+    },
+    "files.autoSave": "afterDelay",
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.duration": 400,
+    "editor.lineNumbers": "relative",
+
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.minimap.size": "fill",
+    "editor.glyphMargin": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "key": "leader b",
+            "command": "workbench.action.terminal.sendSequence",
+            "args": {
+            "text": "ls\u000D"
+            }
+        },
+        {
+            "before": ["J"],
+            "after": ["1", "0", "j", "z", "z"]
+        },
+        {
+            "before": ["K"],
+            "after": ["1", "0", "k", "z", "z"]
+        },
+        {
+            "before": ["H"],
+            "after": ["7","h"]
+        },
+        {
+            "before": ["L"],
+            "after": ["7","l"]
+        },
+        {
+            "before": ["L"],
+            "after": ["7","l"]
+        },
+
+        {
+            "before": ["z"],
+            "after": ["z","z"]
+        },
+
+        // Search Zone
+        {
+            "before": [
+                "<Esc>"
+            ],
+            "commands": [
+                ":nohl"
+            ],
+        },    
+        {
+            "before": ["n"],
+            "after": ["n","z","z"]
+        },
+        {
+            "before": ["N"],
+            "after": ["N","z","z"]
+        },
+        {
+            "before": ["g", "l"],
+            "after": ["ctrl","z","z"]
+        },
+        {
+            "before": ["space", "v"],
+            "commands": [
+                "workbench.action.splitEditor"
+            ],
+        },
+        {
+            "before": ["U"],
+            "after": ["ctrl+r"]
+        },
+        {
+            "before": ["ctrl+a"],
+            "after": ["g", "g", "V", "G"]
+        },
+        {
+            "before": ["g", "b"],
+            "after": ["ctrl+o"]
+        },
+        {
+            "before": ["g", "f"],
+            "after": ["ctrl+i"]
+        },
+        {
+            "before": ["U"],
+            "after": ["ctrl+r"]
+        },
+        {
+            "before": ["y", "d", "d"],
+            "after": ["y", "y", "d", "d"]
+        },
+        //
+    ],
+    "window.titleBarStyle": "custom",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<"],
+            "after": ["<", "g", "v"]
+        },
+        {
+            "before": [">"],
+            "after": [">", "g", "v"]
+        },
+        {
+            "before": ["v"],
+            "after": ["escape", "V"]
+        },
+    ],
+    "workspaceSidebar.folder": "L:\\vscode\\workspaces",
+}

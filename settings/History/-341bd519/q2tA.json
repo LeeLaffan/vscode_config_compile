@@ -1,0 +1,5 @@
+{
+    "key": "j",
+    "command": "editor.action.selectNextStickyScrollLine",
+    "when": "stickyScrollFocused"
+},

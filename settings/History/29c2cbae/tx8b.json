@@ -1,0 +1,5 @@
+{
+    "key": "space b b",
+    "command": "breadcrumbs.focus",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
+}

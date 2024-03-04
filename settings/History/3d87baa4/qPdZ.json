@@ -1,0 +1,6 @@
+{
+    "key": "space o",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+

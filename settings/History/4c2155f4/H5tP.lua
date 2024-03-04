@@ -1,0 +1,1 @@
+barracks_set_spawn = class({})

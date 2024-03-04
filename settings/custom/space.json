@@ -1,0 +1,19 @@
+[
+    {
+        "key": "space b",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+        "text": "ls\u000D"
+        },
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "before": [
+            "space",
+            "v"
+        ],
+        "commands": [
+            "workbench.action.splitEditor"
+        ]
+    }
+]

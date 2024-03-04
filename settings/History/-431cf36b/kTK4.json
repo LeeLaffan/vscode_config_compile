@@ -1,0 +1,51 @@
+// {
+//     "key": "space f f",
+//     "command": "workbench.action.findInFiles",
+//     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+// },
+{
+    "key": "escape",
+    "command": "workbench.action.closeEditorsInGroup",
+    "when": "inSearchEditor && hasSearchResult && searchInputBoxFocus"
+},
+// {
+//     "key": "escape",
+//     "command": "workbench.action.findInFiles",
+//     "when": "inSearchEditor && hasSearchResult && !searchInputBoxFocus"
+// },
+{
+    "key": "ctrl+y",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+        "sequence": [
+            "goToNextReference",
+            // "cursorDown", 
+            // "editor.action.openLink"
+        ]
+    },
+    "when": "inSearchEditor && vim.active && vim.mode != 'Insert'"
+},
+{
+    "key": "space r",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+        "sequence": [
+            // "search.action.focusNextSearchResult",
+            // "extension.vim_escape"
+            // "workbench.action.findInFiles",
+            "workbench.action.moveEditorToNextGroup", 
+        ]
+    },
+    "when": "inSearchEditor && hasSearchResult && searchInputBoxFocus"
+},
+{
+    "key": "space f f",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+        "sequence": [
+            "workbench.action.findInFiles",
+            "workbench.action.moveEditorToNextGroup", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},

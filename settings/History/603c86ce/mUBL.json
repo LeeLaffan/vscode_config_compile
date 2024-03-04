@@ -1,0 +1,24 @@
+// {
+//     "key": "ctrl+enter",
+//     "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+// },
+{
+    "key": "ctrl+enter",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+        "sequence": [
+            "workbench.action.showAllEditorsByMostRecentlyUsed",
+            "list.focusDown",
+        ]
+    },
+},
+{
+    "key": "left",
+    "command": "workbench.action.navigateLeft",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+{
+    "key": "right",
+    "command": "workbench.action.navigateRight",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},

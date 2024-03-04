@@ -1,0 +1,103 @@
+{
+    "key": "ctrl+s",
+    "command": "-workbench.action.files.save"
+},
+
+
+// File Commands
+{
+    "key": "space e",
+    "command": "revealFileInOS",
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+},
+{
+    "key": "space r",
+    "command": "renameFile",
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+},
+{
+    "key": "space m",
+    "command": "fileutils.moveFile",
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+},
+{
+    "key": "space n f",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+},
+{
+    "key": "space n d",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+},
+//
+{
+    "key": "escape",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+},
+{
+    "key": "h",
+    "command": "-list.collapse",
+    "when": "listFocus && !inputFocus"
+},
+{
+    "key": "left",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+},
+{
+    "key": "right",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+},
+
+{
+    "key": "space x",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+        "sequence": [
+            "workbench.action.closeSidebar", // Explorer
+            "workbench.action.activityBarLocation.hide", // Bar with icons?
+            "workbench.action.closeAuxiliaryBar", // Terminal
+            "workbench.action.closePanel", // Terminal
+            "workbench.action.focusFirstEditorGroup",
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+{
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.toggleSidebarPosition",
+    // "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+},
+
+{
+    "key": "ctrl+b",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+        "sequence": [
+            // "workbench.action.toggleSidebarPosition", // Explorer
+            "workbench.action.toggleActivityBarVisibility", // Bar with icons?
+            "workbench.action.toggleAuxiliaryBar", // Bar with icons?
+            // "workbench.action.closeAuxiliaryBar", // Terminal
+            // "workbench.action.focusFirstEditorGroup"
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+{
+    "key": "space a",
+    "command": "workbench.files.action.showActiveFileInExplorer",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+{
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+{
+    "key": "ctrl+down",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  }

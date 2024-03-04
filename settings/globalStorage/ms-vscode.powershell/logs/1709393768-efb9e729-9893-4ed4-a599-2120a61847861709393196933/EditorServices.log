@@ -1,0 +1,4 @@
+2024-03-02 15:36:10.294 +00:00 [INF] ReadLine overridden with 'Microsoft.PowerShell.EditorServices.Services.PowerShell.Console.PsrlReadLine'
+2024-03-02 15:36:10.828 +00:00 [WRN] No ConfigurationItems have been defined, configuration won't surface any configuration from the client!
+2024-03-02 15:36:11.649 +00:00 [INF] Unable to find PSSA settings file at 'l:\Code\Python\vscode_config_compile\PSScriptAnalyzerSettings.psd1'. Loading default rules.
+2024-03-02 15:36:11.651 +00:00 [INF] PSScriptAnalyzer settings file not found. Falling back to default rules

@@ -1,0 +1,42 @@
+2024-03-02 09:39:08.398 +00:00 [INF] ReadLine overridden with 'Microsoft.PowerShell.EditorServices.Services.PowerShell.Console.PsrlReadLine'
+2024-03-02 09:39:09.640 +00:00 [WRN] No ConfigurationItems have been defined, configuration won't surface any configuration from the client!
+2024-03-02 09:39:10.481 +00:00 [INF] Unable to find PSSA settings file at 'l:\Code\Python\vscode_config_compile\PSScriptAnalyzerSettings.psd1'. Loading default rules.
+2024-03-02 09:39:10.483 +00:00 [INF] PSScriptAnalyzer settings file not found. Falling back to default rules
+2024-03-02 10:18:04.826 +00:00 [WRN] Runtime exception occurred while executing command:
+
+System.Management.Automation.ParseException: At line:2 char:14
++         "key": "space y",
++              ~
+Unexpected token ':' in expression or statement.
+
+At line:5 char:15
++         "text": "ls\u000D"
++               ~
+Unexpected token ':' in expression or statement.
+
+At line:8 char:7
++     },
++       ~
+Missing expression after ','.
+
+At line:9 char:1
++ quit
++ ~~~~
+Unexpected token 'quit' in expression or statement.
+   at System.Management.Automation.Runspaces.PipelineBase.Invoke(IEnumerable input)
+   at System.Management.Automation.PowerShell.Worker.ConstructPipelineAndDoWork(Runspace rs, Boolean performSyncInvoke)
+   at System.Management.Automation.PowerShell.Worker.CreateRunspaceIfNeededAndDoWork(Runspace rsToUse, Boolean isSync)
+   at System.Management.Automation.PowerShell.CoreInvokeHelper[TInput,TOutput](PSDataCollection`1 input, PSDataCollection`1 output, PSInvocationSettings settings)
+   at System.Management.Automation.PowerShell.CoreInvoke[TInput,TOutput](PSDataCollection`1 input, PSDataCollection`1 output, PSInvocationSettings settings)
+   at System.Management.Automation.PowerShell.Invoke[T](IEnumerable input, PSInvocationSettings settings)
+   at Microsoft.PowerShell.EditorServices.Services.PowerShell.Utility.PowerShellExtensions.InvokeAndClear[TResult](PowerShell pwsh, PSInvocationSettings invocationSettings) in D:\a\_work\1\s\src\PowerShellEditorServices\Services\PowerShell\Utility\PowerShellExtensions.cs:line 76
+   at Microsoft.PowerShell.EditorServices.Services.PowerShell.Execution.SynchronousPowerShellTask`1.ExecuteNormally(CancellationToken cancellationToken) in D:\a\_work\1\s\src\PowerShellEditorServices\Services\PowerShell\Execution\SynchronousPowerShellTask.cs:line 108
+2024-03-02 10:57:55.295 +00:00 [FTL] unhandled exception
+OmniSharp.Extensions.JsonRpc.InputProcessingException: There was an error processing input the contents of the buffer were ''
+ ---> System.InvalidOperationException: Reading is not allowed after reader was completed.
+   at System.IO.Pipelines.ThrowHelper.ThrowInvalidOperationException_NoReadingAllowed()
+   at OmniSharp.Extensions.JsonRpc.InputHandler.ProcessInputStream(CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at OmniSharp.Extensions.JsonRpc.InputHandler.ProcessInputStream(CancellationToken cancellationToken)
+   at OmniSharp.Extensions.JsonRpc.InputHandler.ProcessInputStream(CancellationToken cancellationToken)
+   at OmniSharp.Extensions.JsonRpc.InputHandler.<Start>b__26_0()

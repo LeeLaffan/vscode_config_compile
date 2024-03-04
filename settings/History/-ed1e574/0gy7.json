@@ -1,0 +1,6 @@
+
+{
+    "key": "g u",
+    "command": "editor.action.goToReferences",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},

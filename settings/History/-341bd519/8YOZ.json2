@@ -1,0 +1,93 @@
+// J Based Keys
+{
+    "key": "j",
+    "command": "editor.action.selectNextStickyScrollLine",
+    "when": "stickyScrollFocused"
+},
+{
+    "key": "j",
+    "command": "notebook.focusNextEditor",
+    "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top'"
+},
+
+// Ctrl+J Based Keys
+
+// Positive
+{
+    "key": "ctrl+j",
+    "command": "extension.vim_down",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && !parameterHintsVisible && !suggestWidgetVisible"
+},
+{
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext"
+},
+{
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown",
+    "when": "!terminalFocus"
+},
+{
+    "key": "ctrl+j",
+    "command": "scrollLineDown",
+    "when": "textInputFocus"
+},
+{
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenNavigateNext"
+},
+{
+    "key": "ctrl+j",
+    "command": "list.focusDown",
+    "when": "listFocus || listHasSelectionOrFocus"
+},
+{
+    "key": "ctrl+j",
+    "command": "search.focus.nextInputBox",
+    "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+},
+{
+    "key": "ctrl+j",
+    "command": "settings.action.focusSettingsFromSearch",
+    "when": "inSettingsSearch && !suggestWidgetVisible"
+},
+{
+    "key": "ctrl+j",
+    "command": "editor.action.selectNextStickyScrollLine",
+    "when": "stickyScrollFocused"
+},
+{
+    "key": "ctrl+j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused"
+},
+{
+    "key": "ctrl+j",
+    "command": "breadcrumbs.selectFocused",
+    "when": "breadcrumbsActive && breadcrumbsVisible"
+},
+{
+    "key": "ctrl+j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+},
+{
+    "key": "ctrl+j",
+    "command": "inlineChat.nextFromHistory",
+    "when": "inlineChatFocused && inlineChatHasProvider && inlineChatInnerCursorEnd"
+},
+{
+    "key": "ctrl+j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused"
+},
+{
+    "key": "ctrl+j",
+    "command": "workbench.statusBar.focusNext",
+    "when": "editorHoverFocused"
+},
+// Negative
+{
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
+},

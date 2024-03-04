@@ -1,0 +1,1 @@
+modifier_test = class({})

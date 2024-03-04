@@ -1,0 +1,8 @@
+{
+    "key": "ctrl+enter",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+},
+{
+    "key": "space s",
+    "command": "workbench.explorer.fileView.toggleVisibility"
+},

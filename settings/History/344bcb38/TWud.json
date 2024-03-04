@@ -1,0 +1,9 @@
+{
+    "before": [
+        "space",
+        "v"
+    ],
+    "commands": [
+        "workbench.action.splitEditor"
+    ]
+}

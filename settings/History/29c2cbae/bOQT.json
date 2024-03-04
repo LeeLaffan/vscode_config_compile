@@ -1,0 +1,5 @@
+{
+    "key": "space b b",
+    "command": "breadcrumbs.focusAndSelect",
+    "when": "editorTextFocus&&breadcrumbsPossible && breadcrumbsVisible"
+}

@@ -1,0 +1,38 @@
+{
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown",
+    "when": "!terminalFocus"
+},
+{
+    "key": "ctrl+k",
+    "command": "workbench.ation.navigateUp",
+    "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+},
+
+{
+    "key": "escape",
+    "command": "workbench.action.navigateUp",
+    "when": "terminalFocus"
+},
+{
+    "key": "space y",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+    "text": "ls\u000D"
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+{
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    // "args": {
+    // "text": "ls\u037777777777D"
+    // },
+    "when": "(editorTextFocus && vim.active && vim.mode != 'Insert') || terminalFocus"
+},
+{
+    "key": "space t t",
+    "command": "workbench.action.terminal.runRecentCommand",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
+    "after": "enter"
+},

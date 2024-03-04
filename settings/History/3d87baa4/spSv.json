@@ -1,0 +1,17 @@
+{
+    "key": "space o",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+        "sequence": [
+            "editor.action.insertLineAfter", 
+            "cursorUp", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+
+{
+    "key": "space c",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+}

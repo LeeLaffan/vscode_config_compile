@@ -1,0 +1,8 @@
+{
+    "key": "ctrl+enter",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+},
+{
+    "key": "ctrl+s",
+    "command": "workbench.view.explorer"
+}

@@ -1,0 +1,5 @@
+{
+    "key": "space",
+    "command": "whichkey.show",
+    "when": ""
+},

@@ -1,0 +1,5 @@
+2024-03-03 22:58:13.034 +00:00 [INF] ReadLine overridden with 'Microsoft.PowerShell.EditorServices.Services.PowerShell.Console.PsrlReadLine'
+2024-03-03 22:58:14.030 +00:00 [WRN] No ConfigurationItems have been defined, configuration won't surface any configuration from the client!
+2024-03-03 22:58:14.846 +00:00 [INF] Unable to find PSSA settings file at 'l:\Code\Python\vscode_config_compile\PSScriptAnalyzerSettings.psd1'. Loading default rules.
+2024-03-03 22:58:14.848 +00:00 [INF] PSScriptAnalyzer settings file not found. Falling back to default rules
+2024-03-03 23:06:00.379 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell Missing expression after ','.

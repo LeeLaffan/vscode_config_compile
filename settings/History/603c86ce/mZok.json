@@ -1,0 +1,9 @@
+{
+    "key": "ctrl+enter",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+},
+{
+    "key": "ctrl+right",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},

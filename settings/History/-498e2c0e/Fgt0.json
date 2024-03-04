@@ -1,0 +1,260 @@
+{
+    "typescript.suggest.completeFunctionCalls": true,
+    "vscode-neovim.neovimExecutablePaths.linux": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+    /*
+    "vscode-neovim.ctrlKeysForNormalMode": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "o",
+        "r",
+        // "s",
+        "t",
+        "u",
+        "w",
+        "x",
+        "y",
+        "z",
+        "/",
+        "]",
+        "right",
+        "left",
+        "up",
+        "down",
+        "backspace",
+        "delete"
+    ],
+    */
+    "go.gopath": "L:\\Languages\\Go",
+
+
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false
+    },
+    "files.autoSave": "afterDelay",
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.duration": 400,
+    "editor.lineNumbers": "relative",
+
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.minimap.size": "fill",
+    "editor.glyphMargin": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "key": "leader b",
+            "command": "workbench.action.terminal.sendSequence",
+            "args": {
+            "text": "ls\u000D"
+            }
+        },
+        {
+            "before": ["<space>"],
+            "commands": ["whichkey.show"]
+        },
+        {
+            "before": ["J"],
+            "after": ["1", "0", "j", "z", "z"]
+        },
+        {
+            "before": ["K"],
+            "after": ["1", "0", "k", "z", "z"]
+        },
+        {
+            "before": ["H"],
+            "after": ["7","h"]
+        },
+        {
+            "before": ["L"],
+            "after": ["7","l"]
+        },
+        {
+            "before": ["L"],
+            "after": ["7","l"]
+        },
+
+        {
+            "before": ["z"],
+            "after": ["z","z"]
+        },
+        {
+            "before": ["<Space>", "o"],
+            "after": ["o"]
+        },
+        {
+            "before": ["d", "o"],
+            "after": ["j", "d", "d", "k"]
+        },
+        {
+            "before": ["d", "O"],
+            "after": ["k", "d", "d", "j"]
+        },
+        {
+            "before": ["D", "O"],
+            "after": ["k", "d", "d", "j"]
+        },
+
+        // Search Zone
+        {
+            "before": [
+                "<Esc>"
+            ],
+            "commands": [
+                ":nohl"
+            ],
+        },    
+        {
+            "before": ["n"],
+            "after": ["n","z","z"]
+        },
+        {
+            "before": ["N"],
+            "after": ["N","z","z"]
+        },
+        {
+            "before": ["g", "l"],
+            "after": ["ctrl","z","z"]
+        },
+        {
+            "before": ["space", "v"],
+            "commands": [
+                "workbench.action.splitEditor"
+            ],
+        },
+        {
+            "before": ["U"],
+            "after": ["ctrl+r"]
+        },
+        {
+            "before": ["ctrl+a"],
+            "after": ["g", "g", "V", "G"]
+        },
+        {
+            "before": ["g", "b"],
+            "after": ["ctrl+o"]
+        },
+        {
+            "before": ["g", "f"],
+            "after": ["ctrl+i"]
+        },
+        {
+            "before": ["U"],
+            "after": ["ctrl+r"]
+        },
+        {
+            "before": ["y", "d", "d"],
+            "after": ["y", "y", "d", "d"]
+        }
+        //
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<"],
+            "after": ["<", "g", "v"]
+        },
+        {
+            "before": [">"],
+            "after": [">", "g", "v"]
+        },
+        {
+            "before": ["v"],
+            "after": ["escape", "V"]
+        },
+    ],
+    "workspaceSidebar.folder": "L:\\vscode\\workspaces",
+    "workbench.colorTheme": "Vim Dark Hard",
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "materialTheme.accent": "Acid Lime",
+    "multiCommand.commands": [
+
+    ],
+    "search.mode": "reuseEditor",
+    "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
+    "search.searchEditor.reusePriorSearchConfiguration": true,
+    "search.showLineNumbers": true,
+    "workbench.settings.settingsSearchTocBehavior": "hide",
+    "search.actionsPosition": "auto",
+    "search.defaultViewMode": "tree",
+    "search.searchOnTypeDebouncePeriod": 10,
+    "search.smartCase": true,
+    "search.sortOrder": "modified",
+    "search.useGlobalIgnoreFiles": true,
+    "search.useIgnoreFiles": false,
+    "editor.find.seedSearchStringFromSelection": "selection",
+    "whichkey.delay": 200,
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.showTabs": "none",
+    "workbench.editor.titleScrollbarSizing": "large",
+    "breadcrumbs.symbolPath": "on",
+    "breadcrumbs.filePath": "last",
+    "workbench.settings.openDefaultKeybindings": true,
+    "commands.showKeybindings": true,
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideActivityBar": false,
+    "window.commandCenter": false,
+    "dateTime.customFormat": "Do MMMM, YYYY - HH:mm ",
+    "vim.smartRelativeLine": true,
+    "dateTime.displayPrefix": "                                          ",
+    "dateTime.displaySuffix": " ",
+      // ================================================================================
+  // APC - UI Customizer
+  // ================================================================================
+  "apc.menubar.compact": true,
+  "apc.electron": {
+    "frame": false,
+    "titleBarStyle": "hidden"
+  },
+  "apc.header": {
+    "height": 37
+  },
+  "apc.sidebar.titlebar": {
+    "height": 37
+  },
+  "apc.activityBar": {
+    "size": 40,
+    "itemSize": 40,
+    "itemMargin": 0
+  },
+  "apc.stylesheet": {
+    ".title-label": "display: none !important",
+    ".composite.title": "display: block !important",
+    ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important"
+},
+"workbench.editor.editorActionsLocation": "hidden",
+"window.titleBarStyle": "native",
+"files.associations": {
+    "*.json": "jsonc"
+},
+"commands.commands": {
+    "workbench.action.showAllSymbols_564": {
+        "command": "workbench.action.showAllSymbols"
+    },
+    "editor.action.accessibleViewGoToSymbol_953": {
+        "command": "editor.action.accessibleViewGoToSymbol"
+    }
+},
+"window.openFoldersInNewWindow": "on"
+}

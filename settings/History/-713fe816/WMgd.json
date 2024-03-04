@@ -1,0 +1,11 @@
+[
+	{
+	    "before": [
+	        "space",
+	        "v"
+	    ],
+	    "commands": [
+	        "workbench.action.splitEditor"
+	    ]
+	}
+]output/output.json

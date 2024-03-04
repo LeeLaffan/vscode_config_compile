@@ -1,0 +1,8 @@
+{
+    "key": "space r k",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "L:\\Code\\Python\\vscode_config_compile\\scripts\\compile_and_write.ps1\u000D"
+    }
+},

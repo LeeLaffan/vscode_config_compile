@@ -1,0 +1,20 @@
+{
+    "key": "space o",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+
+{
+    "key": "space o",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+        "sequence": [
+            // "workbench.action.toggleSidebarPosition", // Explorer
+            "workbench.action.toggleActivityBarVisibility", // Bar with icons?
+            "workbench.action.toggleAuxiliaryBar", // Bar with icons?
+            // "workbench.action.closeAuxiliaryBar", // Terminal
+            // "workbench.action.focusFirstEditorGroup"
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},

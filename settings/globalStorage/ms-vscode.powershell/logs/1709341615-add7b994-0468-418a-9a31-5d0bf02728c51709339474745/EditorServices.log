@@ -1,0 +1,34 @@
+2024-03-02 01:06:58.993 +00:00 [INF] ReadLine overridden with 'Microsoft.PowerShell.EditorServices.Services.PowerShell.Console.PsrlReadLine'
+2024-03-02 01:06:59.962 +00:00 [WRN] No ConfigurationItems have been defined, configuration won't surface any configuration from the client!
+2024-03-02 01:07:00.790 +00:00 [INF] Unable to find PSSA settings file at 'l:\Code\Python\vscode_config_compile\PSScriptAnalyzerSettings.psd1'. Loading default rules.
+2024-03-02 01:07:00.792 +00:00 [INF] PSScriptAnalyzer settings file not found. Falling back to default rules
+2024-03-02 01:08:13.405 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell Unexpected token 'L:\Code\Python\vscode_config_compile\output\output.json' in expression or statement.
+2024-03-02 01:08:15.569 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell Unexpected token 'L:\Code\Python\vscode_config_compile\output\output.json' in expression or statement.
+2024-03-02 01:08:15.834 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell Unexpected token 'L:\Code\Python\vscode_config_compile\output\output.json'' in expression or statement.
+2024-03-02 01:08:17.134 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell Unexpected token 'L:\Code\Python\vscode_config_compile\output\output.json'' in expression or statement.
+2024-03-02 01:08:17.432 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell Unexpected token 'L:\Code\Python\vscode_config_compile\output\output.json'' in expression or statement.
+2024-03-02 01:09:36.934 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: '.
+2024-03-02 01:09:38.301 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: '.
+2024-03-02 01:09:39.283 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: '.
+2024-03-02 01:15:00.638 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:04.980 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:08.004 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:09.500 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:10.044 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:11.430 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:13.020 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:13.907 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:14.221 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:15.032 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:15.436 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:15.793 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:16.605 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:17.009 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:18.303 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:19.840 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:19:54.795 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: ".
+2024-03-02 01:35:06.653 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: '.
+2024-03-02 01:35:15.248 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: '.
+2024-03-02 01:35:15.557 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: '.
+2024-03-02 01:35:16.444 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell The string is missing the terminator: '.
+2024-03-02 01:50:03.577 +00:00 [WRN] textDocument/codeAction skipping diagnostic with empty Code field: PowerShell Unexpected token '$python_cmd' in expression or statement.

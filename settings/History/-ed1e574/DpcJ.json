@@ -1,0 +1,6 @@
+
+{
+    "key": "g u",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+},

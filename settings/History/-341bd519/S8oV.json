@@ -1,0 +1,23 @@
+// J Based Keys
+{
+    "key": "j",
+    "command": "editor.action.selectNextStickyScrollLine",
+    "when": "stickyScrollFocused"
+},
+{
+    "key": "j",
+    "command": "notebook.focusNextEditor",
+    "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top'"
+},
+
+// Ctrl+J Based Keys
+{
+    "key": "ctrl+j",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+j",
+    "command": "notebook.cell.insertCodeCellBelow",
+    "when": "config.notebook.allowMovingCells && notebookEditorFocused && !inputFocus"
+},

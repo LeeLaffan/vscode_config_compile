@@ -1,0 +1,13 @@
+{
+    "key": "ctrl+enter",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+},
+{
+    "key": "ctrl+s",
+    "command": "workbench.explorer.fileView.toggleVisibility"
+},
+{
+    "key": "ctrl+e",
+    "command": "revealFileInOS"
+    "when": "explorerViewletFocus && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+}

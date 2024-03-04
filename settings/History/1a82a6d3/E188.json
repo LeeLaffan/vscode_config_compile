@@ -1,0 +1,18 @@
+{
+    "key": "space v k",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "L:\\Code\\Python\\vscode_config_compile\\scripts\\compile_and_write.ps1\u000D"
+    }
+},
+{
+    "key": "space v e",
+    "command": "workbench.view.extensions",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
+{
+    "key": "space v t",
+    "command": "workbench.action.selectTheme",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},

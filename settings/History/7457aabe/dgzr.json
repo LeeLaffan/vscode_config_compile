@@ -1,0 +1,5 @@
+{
+    "key": "space w c",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+}

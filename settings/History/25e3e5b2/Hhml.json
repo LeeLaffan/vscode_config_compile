@@ -1,0 +1,13 @@
+{
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown",
+    "when": "!terminalFocus"
+},
+{
+    "key": "space y",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+    "text": "ls\u000D"
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},

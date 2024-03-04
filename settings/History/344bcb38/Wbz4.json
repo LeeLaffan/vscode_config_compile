@@ -1,0 +1,17 @@
+{
+    "before": [
+        "space",
+        "v"
+    ],
+    "commands": [
+        "workbench.action.splitEditor"
+    ]
+},
+{
+    "key": "space t t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    // "args": {
+    // "text": "ls\u000D"
+    // },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+},
