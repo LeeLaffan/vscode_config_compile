@@ -1,0 +1,179 @@
+{
+    "key": "space d s",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "workbench.action.debug.start", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d p",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "workbench.action.debug.pause", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d q",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "workbench.action.debug.stop", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d c",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "workbench.action.debug.continue", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d i",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "workbench.action.debug.stepInto", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d o",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "workbench.action.debug.stepOut", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d d",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "workbench.action.debug.stepOver", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+
+// Breakpoints
+{
+    "key": "space d e",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.showDebugHover", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d b",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.toggleBreakpoint", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d b",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.toggleBreakpoint", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d b",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.toggleBreakpoint", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d b",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.toggleBreakpoint", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d b",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.toggleBreakpoint", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d b",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.toggleBreakpoint", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d b",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.toggleBreakpoint", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d t",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.runToCursor", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+//   workbench.debug.viewlet.action.removeAllBreakpoints
+//   workbench.debug.action.focusBreakpointsView
+//   editor.debug.action.showDebugHover
+
+//   debug.addConfiguration
+  
+//   csdevkit.debug.noDebugProjectLaunch = run?
+//   debugpy.debugInTerminal = python debug?
+//   debugpy.debugUsingLaunchConfig
+
+//   workbench.debug.action.focusCallStackView
+//   nav call stack = workbench.action.debug.callStackDown
+
+//   workbench.action.debug.nextConsole
+//   workbench.action.debug.restart
+
+//   workbench.debug.action.focusRepl

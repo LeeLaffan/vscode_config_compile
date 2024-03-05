@@ -1,0 +1,34 @@
+{
+    "key": "space d b",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.toggleInlineBreakpoint", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d shift+g",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.goToPreviousBreakpoint", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+{
+    "key": "space d g",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        "sequence": [
+            "editor.debug.action.goToNextBreakpoint", 
+        ]
+    },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.mode != 'CommandlineInProgress'",
+},
+
+  
+  
+  
